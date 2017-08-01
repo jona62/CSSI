@@ -1,0 +1,84 @@
+span {
+  font-size: 18px;
+  font-family: fantasy;
+  text-decoration:none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.header a:hover{
+  text-shadow: 5px 2px 20px 20px white;
+  color:red;
+}
+li a:hover{
+text-shadow: 5px 2px 20px 20px white;
+color:red;
+}
+
+div{
+    padding: 0 20px 0 20px;
+    margin: 10px 50px 10px 50px;
+    list-style-type:none;
+}
+
+li {
+  margin:0;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+li:hover{
+    text-shadow: 5px 2px 20px 20px white;
+    color:red;
+}
+
+body {
+background-color:#1a1a1a;
+font-family:fantasy;
+color:white;
+height: auto;
+}
+.slider{
+background-color: rgba(255, 255, 255, 0.4);
+padding: 5px 5px 10px 0;
+margin: 0 50px 0 50px;
+}
+.section_1{
+  font-size:12px;
+  list-style-type:none;
+  margin: 0 50px 0 50px;
+}
+div.gallery {
+    margin: 20px 40px 20px 40px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+}
+
+/*div.gallery:hover {
+    border: 2px solid #777;
+}*/
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+.section_2{
+  margin: 20px 0 20px 0;
+}
+
+.profile {
+  background-color: rgba(255, 255, 255, 0.4);
+  height:600px;
+  width: 930px;
+  margin-top: 20px;
+  margin: 20px 50px 0 50px;
+  padding-right: 20px;
+}

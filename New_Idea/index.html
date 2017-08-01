@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Another One!</title>
+  </head>
+  <body>
+    <!-- Header Starts-->
+    <div class="header">
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="photos.html"> Photos</a></li>
+        <li><a href="profile.html"> Profile</a></li>
+        <li><a href="friends.html"> Friends</a></li>
+        <li><a href="favorites.html"> Favorites</a></li>
+    </ul>
+    </div>
+  <hr>
+<!-- Header Ends-->
+<!-- Slider-->
+<div class="section_1">
+  <ul class="slider">
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="Images/another_one.png" width="950px" height="550px">
+      <img class="mySlides" src="Images/another_two.jpg" width="950px" height="550px">
+      <img class="mySlides" src="Images/another_three.jpg" width="950px" height="550px">
+      <img class="mySlides" src="Images/another_four.jpg" width="950px" height="550px">
+      <img class="mySlides" src="Images/another_five.jpg" width="950px" height="550px">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</ul>
+</div><br>
+<!--Slider Ends-->
+<div>
+  <div class="section_2">
+  <h2>Summary</h2>
+  <hr>
+  <p>I live in New York City, I'm a student at Medgar Evers College.<br>
+    I like watching movies and playing games.</p>
+    <h2>Hometown</h2>
+    <hr>    <p>Maiduguri, Nigeria</p>
+    <h2>University</h2>
+    <hr>
+    <p>Medgar Evers College</p>
+    <h2>Other Profiles</h2>
+    <hr>
+  </div>
+</div>
+<!--Script For Slider-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+<!--Script For Slider Ends-->
+</body>
+</html>

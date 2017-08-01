@@ -1,0 +1,33 @@
+body {
+  font-family: "Oxygen","Oxygen","Segoe UI","Helvetica Neue",sans-serif,"Helvetica",arial;
+  background-color: #f2f2f2;
+}
+h1 {
+  color: blue;
+  margin: 10px 0 10px 0;
+  padding: 5px 5px 5px 5px;
+}
+ul {
+  list-style-type: none;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color:white;
+}
+li {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: white;
+  color: black;
+}
+/* Work Area */
+div.nav {
+float: left;
+}

@@ -1,0 +1,75 @@
+.topnav {
+background-color: white;
+font-family: monospace;
+display: block;
+padding: 5px 10px 5px 10px;
+border-style: solid;
+border-radius: 30px;
+text-decoration: none;
+
+}
+
+body {
+  background-color: #e6ffff;
+}
+
+li {
+  display: inline-block;
+  margin: 0 20px 0 2px;
+  padding: 10px 5px 10px 5px;
+  font-size: 15px;
+  border-width: 10px;
+  list-style-type: upper-roman;
+
+}
+
+li a:hover {
+    background-color: #e6ffff;
+    color: black;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0 20px 0 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+img {
+  float: right;
+  border-radius: 30px;
+  margin: 58px 10px;
+}
+#profilepic{
+  float: left;
+  border-radius: 30px;
+  margin: 40px 0 58px 10px;
+
+}
+.sites {
+  display: inline-block;
+  margin: 0 20px 0 2px;
+  padding: 10px 5px 10px 5px;
+  font-size: 15px;
+  border-width: 10px;
+  list-style-type: upper-roman;
+}
+.leanleft{
+border: 3px solid black;
+padding: 5px;
+margin:40px 10px 170px 10px;
+border-radius: 30px;
+height: 150px;
+text-align: center;
+background-color: #e6ffff;
+font-size: 20px;
+}
+p{
+  margin: 0;
+  padding:0;
+  font-family: monospace;
+  font-size: 15px;
+}
+#p_info{
+  text-align: left;
+  margin-left: 30px;
+}

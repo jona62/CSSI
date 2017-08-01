@@ -1,0 +1,33 @@
+h2{
+  background-color:rgb(128, 229, 224);
+  padding:10px 0 10px 20px;
+  margin:20px 20px 0 20px;
+  border-radius:20px;
+  border:2px solid black;
+  }
+h1{
+    background-color:rgb(128, 229, 224);
+    padding:20px 0 20px 20px;
+    margin:30px 20px 30px 20px;
+    border-radius:30px;
+    border:2px solid black;
+    }
+body{
+  background-color:rgb(140, 255, 253);
+  margin:10px 20px 10px 20px;
+  border: 2px solid black;
+  border-radius:20px;
+  height:700px;
+  width:auto;
+  color:black;
+  font-family:monospace;
+}
+p{
+  text-indent:1cm;
+  margin-left:25px;
+  margin-right:25px;
+}
+h2:hover ,h1:hover{
+  background-color:#72c1bd;
+  color:white;
+}
