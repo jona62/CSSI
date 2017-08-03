@@ -1,16 +1,21 @@
-/*function showWhenClicked() {
-    $("#pig").show();
+function showWhenClicked(){
+  $("#pig").show();
+}
+function hideWhenClicked(){
+  $("#pig2").hide();
 }
 
-function hideWhenClicked() {
-    $("#pig").hide();
+
+function fly2 (){
+  $("#pig2").animate ({left: '1750px'}, 1500);
+}
+function flyWhenClicked(){
+  $('#pig').animate ({left:'1750px'}, "slow", fly2);
 }
 
-function setup() {
-    $("#showPig").click(showWhenClicked);
-    $("#hidePig").click(hideWhenClicked);
+function setup(){
+  $('#showPig').click(showWhenClicked);
+  $('#hidePig').click(hideWhenClicked);
+  $('#flyPig').click(flyWhenClicked);
 }
-*/
-$("div").click(function(){
-   $("#div1").fadeTo("slow", 0.15);
-   $("#div2").fadeTo("slow", 0.4);
+$(document).ready(setup);
