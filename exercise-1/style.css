@@ -1,0 +1,57 @@
+.frame {
+    height: 150px;
+    width: 120px;
+    float: left;
+    margin: 45px 0px 100px 94.5px;
+    /* margin: top right bottom left; */
+    border: 3px solid #FFFFFF;
+    box-shadow: 7px 7px 40px #606060;
+    outline: 10px solid #000;
+    /* don't include outline when determining margin for positioning! */
+}
+
+#wall {
+    position: absolute;
+    height: 450px;
+    width: 750px;
+    left: 50%;
+    top: 50%;
+    margin: -225px 0 0 -375px;
+    /* margin: top right bottom left; */
+    background: #CCFF99;
+}
+
+#android {
+    background: #FFFFFF;
+    font-size: 1.2em;
+    font-family: Calibri;
+    color: #27314A;
+    text-align: center;
+}
+
+#string {
+    background: #649ECE;
+    font-size: 1.2em;
+    font-family: Futura;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#PEP {
+    background: #3B3A39;
+    font-size: 2.7em;
+    font-family: Futura;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+img {
+    width:70px;
+}
+
+.newColor {
+  color:orange;
+}
+.Animate{
+  animation:fading 1s infinite}  @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0};
+}

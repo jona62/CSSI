@@ -31,3 +31,13 @@ h2:hover ,h1:hover{
   background-color:#72c1bd;
   color:white;
 }
+button{
+  margin-left: 20px;
+  border-radius: 20px;
+  border-color: grey grey black grey;
+  background-color: rgb(140, 255, 253);
+}
+button:hover{
+  background-color:#72c1bd;
+  color:white;
+}

@@ -2,7 +2,9 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-<script type="text/javascript" src="script.js"></script>  <title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<title>
     todo
   </title>
 <body>
@@ -11,21 +13,25 @@
     <p>I am Jonathan James. I am a student of Computer Science at Medgar Evers College of the City University of New York. I enjoy coding, playing games,coding and watching movies!!!</p>
     <h2>My to-do list</h2>
     <ol>
-      <li id="todo1"> Graduate from College
+      <li Id="todo1" class="task"> Graduate from College
       <button onclick="Taskdone('todo1')">Done</button>
       </li>
-      <li Id="todo2"> Become Rich
+      <li Id="todo2" class="task"> Become Rich
       <button onclick="Taskdone('todo2')">Done</button>
       </li>
-      <li Id="todo3"> Travel the World
+      <li Id="todo3" class="task"> Travel the World
       <button onclick="Taskdone('todo3')">Done</button>
       </li>
-      <li Id="todo4"> Buy a House
+      <li Id="todo4" class="task"> Buy a House
       <button onclick="Taskdone('todo4')">Done</button>
       </li>
-      <li Id="todo5"> Buy A jet
+      <li Id="todo5" class="task"> Buy A jet
      <button onclick="Taskdone('todo5')">Done</button>
+     <br>
       </li>
+
      </ol>
+     <button onclick="ClearAll()">ClearAll</button>
+     <button onclick="pop_up()">Add Item</button>
 </body>
 </html>
