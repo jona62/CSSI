@@ -41,7 +41,3 @@ print name.capitalize()
 print studentLookUp(Student,name)
 
 '''
-def author()
-    Jonathan James
-import random
-random.randint(1,200)

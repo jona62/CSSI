@@ -68,6 +68,7 @@ for i in range (8):
 #---------------------------------------------
 #print   "{0} and {1} {2} up the {3}".format("jack","jill","ran","hill")
 #--------------------------------------------
+'''
 def drawbox():
     info = ""
     info = ("#" * 27)+ '\n'
@@ -81,3 +82,4 @@ def drawbox():
     info = info + ("#" * 27)
     print info
 drawbox()
+'''
