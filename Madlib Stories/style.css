@@ -1,0 +1,37 @@
+h1 {
+  color: #E2FF99;
+  background-color: orange;
+}
+h2 {
+  color: orange;
+}
+p {
+  text-indent: 1cm;
+}
+#output {
+  background-color: #E2F798;
+  font-style: italic;
+  color: green;
+  padding: 20px;
+  display: inline-block;
+}
+input{
+  background-color: #ffe08c;
+}
+li{
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  background-color:#7c889b;
+}
+div {
+  margin: 0 20px 5px 10px;
+  list-style-type: none;
+}
+li a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+.head {
+
+}
