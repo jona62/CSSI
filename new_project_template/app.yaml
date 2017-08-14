@@ -1,0 +1,24 @@
+application: new-project-template
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /matt_bomer
+  static_files: matt_bomer.jpg
+  upload: matt_bomer\.jpg
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest
