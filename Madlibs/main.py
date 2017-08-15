@@ -1,5 +1,6 @@
 import jinja2
 import webapp2
+import os
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
 
@@ -10,12 +11,9 @@ class MainHandler(webapp2.RequestHandler):
     def post(self):
         results_template = env.get_template('result.html')
         template_variables = {
-            'noun':self.request.get("noun"),
-            'pnoun':self.request.get("pnoun"),
-            'noun':self.request.get("noun"),
-            'pronoun':self.request.get("pronoun"),
-            'adjective':self.request.get("adjective"),
-            'verb':self.request.get("verb"),
+            first_name = content_dict['name']
+            country = content_dict['region']
+    print "My name is " + first_name + " and my country is " + country
         }
         self.response.out.write(results_template.render(template_variables))
 app = webapp2.WSGIApplication(

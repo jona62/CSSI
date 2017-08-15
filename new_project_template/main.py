@@ -30,8 +30,8 @@ class MainHandler(webapp2.RequestHandler):
         picture = self.request.get('picture')
         good_day = my_day == 'good'
         images = {
-            'favicon' : '/favicon.ico'
-            'matt_bomer' : '/matt_bomer.jpg'
+            'favicon' : '/favicon.ico',
+            'matt_bomer' : '/matt_bomer.jpg',
             'guy' : 'https://blackgeoscientists.files.wordpress.com/2014/06/helloworld.jpg'
         }
         messages = {
@@ -45,10 +45,10 @@ class MainHandler(webapp2.RequestHandler):
             'image_source': images.get(picture, '/not_cat'),
             'message': messages.get(my_day, default),
             'bad_message': 'feel better',
-            'good_day': good_day,}
-        template:jinja_environment.get_template(
-        'template = Template/template.html')
-        logging.info(template)
+            'good_day': good_day,
+            }
+        template=jinja_environment.get_template(
+            'template = Template/template.html')
         self.response.write(template.render(temp_vars))
 
 class AnotherHandler(webapp2.RequestHandler):
@@ -65,4 +65,4 @@ app = webapp2.WSGIApplication(
     ('/', MainHandler),
     ('/question', AnotherHandler),
     ],
-     debug=True)
+     debug=False)
