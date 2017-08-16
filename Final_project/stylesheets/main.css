@@ -169,16 +169,17 @@ ul.comments-holder-ul li.comment-holder:hover .comments-buttons-holder
 .comments-buttons-holder{
   display: none;
   list-style-type: none;
-  width: auto;
-  height: auto;
+  width: 15px;
+  height: 15px;
   overflow: hidden;
 }
 
 .comments-buttons-holder ul li{
   float: right;
-  height: 1px;
-  width: -1px;
-  text-align: center;
+  height: auto;
+  font-size: 10px;
+  width: auto;
+  text-indent: -0.4cm;
   line-height: 0px;
   color: #fff;
   background: #6266bc;

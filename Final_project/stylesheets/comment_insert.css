@@ -19,11 +19,6 @@
   border-bottom: 1px solid #e1e1e1;
 }
 
-.comment-insert h3.who-says span {
-  color:#254A93;
-
-}
-
 .comment-insert .comment-insert-container
 {
   margin: 5px 10px 5px 10px;
@@ -50,10 +45,9 @@
   position: absolute;
   top: 5px;
   right: 10px;
-  width: 60px;
+  width: 50px;
   height: 22px;
   line-height: 22px;
-  background: #6989CC;
   color: #ffffff;
   font-size: 14px;
   text-align: center;
@@ -62,7 +56,8 @@
 }
 
 .comment-post-btn-wrapper:hover{
-  background: #5E7BB8;
-  color: #fff;
-  border: 1px solid #a1a1a1;
+  color: #e1e1e1;
+}
+.comment-text{
+  text-transform: none;
 }

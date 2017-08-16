@@ -10,8 +10,8 @@
    <body>
 <div class="mdl-shadow mdl-cell">
   <ul>
-      <li><a href="final_project.html"><span class="head"> Home</span></li></a>
-      <li><a href="topic.html"><span class="head"> Topics</span></li></a>
+      <li><a href="/"><span class="head"> Home</span></li></a>
+      <li><a href="/topic"><span class="head"> Topics</span></li></a>
       <li><a href="#"><span class="head"> About</span></li></a>
       <li><a href="#"><span class="head"> Contact </span></li></a>
   </ul>
@@ -25,46 +25,47 @@
     </div>
 <div class="comment-wrap">
 
-  <form action="/" method="post">
-    <h3 class="comment-title">
-      Name: <input type="text" name="name" id="username"/></h3>
-      <div class="comment-insert">
-        <h3 class="who-says"><span>Says: </span>Joe</h3>
-        <div class="comment-insert-container">
-        <textarea id="comment-post-text" name="text_field" class="comment-insert-text"></textarea>
-      </div>
-    <div id="comment-post-btn" class="comment-post-btn-wrapper">
+    <form action="/processform" method="post">
+      <h3 class="comment-title">
+      </h3>
+        <div class="comment-insert">
+          <h3 class="who-says"></h3>
+          <div class="comment-insert-container">
+          <textarea id="comment-post-text" name="text_field" class="comment-insert-text"></textarea>
         </div>
-      </form>
+      <div id="comment-post-btn" class="comment-post-btn-wrapper">
+          </div>
+        </form>
 
-        <div class="comment-post-btn-wrapper">
-          <input type="submit" name="name" value="post"/>
-          Post
-        </div>
+          <div class="comment-post-btn-wrapper">
+            <input type="submit" name="username" value="post"/>
+            Post
+          </div>
 
-</div>
-      <div class="comments-list">
-        <ul class="comments-holder-ul">
+  </div>
+
+  <div>
+      {% for comment in comments %}
+       <hr/>
+  </div>
 
 
-          <li class="comment-holder" id="_1">
-            <div class="user-img">
-              <img src="main.jpg" class="user-img-pic"/>
-            </div>
-            <div class="comment-body">
-            <h3 class="username-field">
-              {{ name }}
-            </h3>
-            <div class="comment-text">
-              {{ text_field }}
-            </div>
-            <div class="comments-buttons-holder">
-              <ul>
-                <li id ="x_btn" class="delete-btn">X</li>
-              </ul>
-            </div>
-
-</ul>
+        <div class="comments-list">
+          <ul class="comments-holder-ul">
+            <li class="comment-holder" id="_1">
+              <div class="user-img">
+                <img src="/images/main.jpg" class="user-img-pic"/>
+              </div>
+              <div class="comment-body">
+              <h3 class="username-field">
+                 {{ name }}
+              </h3>
+              <div class="comment-text">
+                {{ comment.text_field }}
+                <h6> {{ comment.created_at }} </h6>
+              </div>
+              </div>
+              {% endfor %}
 </div>
 </div>
 
