@@ -11,22 +11,25 @@
 <div class="mdl-shadow mdl-cell">
   <ul>
     <li><a href="/"><span class="head"> Home</span></li></a>
-  <li><a href="/topic"><span class="head"> Topics</span></li></a>
-  <li><a href="/about"><span class="head"> About</span></li></a>
-  <li><a href="/contact"><span class="head"> Contact </span></li></a>
+    <li><a href="/topic"><span class="head"> Topics</span></li></a>
+      <li><a href="/about"><span class="head"> About</span></li></a>
+      <li><a href="/contact"><span class="head"> Contact </span></li></a>
+  </ul>
 </div>
 <div class="mdl-shadow mdl-cell">
-  <h2>Social (Pragmatic) Communication Disorder</h2>
+  <h2>Social Phobia (or Social Anxiety Disorder)</h2>
 </div>
   <div class="wrapper">
-
+    <div class="page-data">
+      Page Here
+    </div>
 <div class="comment-wrap">
 
-  <form action="/processform2" method="post">
-
-      <input type="hidden" name="section" value="no2"/>
+  <form action="/" method="post">
+    <h3 class="comment-title">
+      Name: <input type="text" name="name" id="username"/></h3>
       <div class="comment-insert">
-        <h3 class="who-says"></h3>
+        <h3 class="who-says"><span>Says: </span>Joe</h3>
         <div class="comment-insert-container">
         <textarea id="comment-post-text" name="text_field" class="comment-insert-text"></textarea>
       </div>
@@ -35,40 +38,33 @@
       </form>
 
         <div class="comment-post-btn-wrapper">
-          <input type="submit" name="username" value="post"/>
+          <input type="submit" name="name" value="post"/>
           Post
         </div>
 
 </div>
-
-<div>
-    {% for comment in comments %}
-    {% if comment.section == "no2" %}
-     <hr/>
-</div>
-
-
       <div class="comments-list">
         <ul class="comments-holder-ul">
           <li class="comment-holder" id="_1">
             <div class="user-img">
-              <img src="/images/main.jpg" class="user-img-pic"/>
+              <img src="main.jpg" class="user-img-pic"/>
             </div>
             <div class="comment-body">
             <h3 class="username-field">
-               {{ name }}
+              {{ name }}
             </h3>
             <div class="comment-text">
-              <p>  {{ comment.text_field }} </p>
-              <h6> {{ comment.created_at }} </h6>
+              {{ text_field }}
             </div>
+            <div class="comments-buttons-holder">
+              <ul>
+                <li id ="x_btn" class="delete-btn">X</li>
+              </ul>
             </div>
-            {% endif %}
-            {% endfor %}
+
 </ul>
 </div>
 </div>
-
 
 </body>
 </html>

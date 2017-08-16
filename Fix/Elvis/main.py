@@ -265,16 +265,6 @@ class topicHandler(webapp2.RequestHandler):
         topic= ENV.get_template("/templates/topic.html")
         self.response.write(topic.render())
 
-class AboutHandler(webapp2.RequestHandler):
-    def get(self):
-        about= ENV.get_template("templates/about.html")
-        self.response.write(about.render())
-
-class ContactHandler(webapp2.RequestHandler):
-    def get(self):
-        contact= ENV.get_template("templates/contact.html")
-        self.response.write(contact.render())
-
 class no1Handler(webapp2.RequestHandler):
     def get(self):
         comments = Comment.query().order(-Comment.created_at).fetch()
@@ -398,8 +388,6 @@ class no12Handler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/topic', topicHandler),
-    ('/about', AboutHandler),
-    ('/contact', ContactHandler),
     ('/no1', no1Handler),
     ('/processform', FormHandler),
     ('/no2', no2Handler),

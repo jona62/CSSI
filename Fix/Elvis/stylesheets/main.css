@@ -34,31 +34,11 @@ span.head{
 .mdl-cell,{
     width: calc(16.6666666667% - 16px);
 }
-
-html {
-  background: url("/images/index1.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-img {
-  float: right;
-  border-radius: 30px;
-  margin: 58px 10px;
-}
-#profilepic{
-  float: left;
-  border-radius: 30px;
-  margin: 40px 0 58px 10px;
-}
-
 ol li {
   display:block;
 }
 ol {
-  height: 650px;
+  height: 550px;
   background-color: #e0e2e5;
   padding: 10px 20px 5px 20px;
   margin: 0 20px 0 20px;
@@ -86,7 +66,7 @@ a img {
   border: 1px solid #c1c1c1;
   border-radius: 5px;
   margin: 10px auto 10px auto;
-  height: auto;
+  height:auto;
   Box-shadow:	0 4px 10px 0 rgba(0,0,0,0.2),
      	        0 4px 20px 0 rgba(0,0,0,0.19);
 }
@@ -182,7 +162,10 @@ ul.comments-holder-ul li.comment-holder .comment-text{
   width:100px;
   height: 20px;
 }
-
+ul.comments-holder-ul li.comment-holder:hover .comments-buttons-holder
+{
+  display: block;
+}
 .comments-buttons-holder{
   display: none;
   list-style-type: none;
