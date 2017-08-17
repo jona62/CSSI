@@ -55,20 +55,18 @@
             </div>
             <div class="comment-body">
             <h3 class="username-field">
-               {{ name }}
-            </h3>
-            <div class="comment-text">
-              <p>  {{ comment.text_field }}
-              <h6> {{ comment.created_at }} </h6></p>
-            </div>
-            </div>
-
-         </ul>
-       </div>
-      {% endif %}
-      {% endfor %}
+              {{ name }}
+           </h3>
+           <div class="comment-text">
+             <p>  {{ comment.text_field }} </p>
+             <h6> {{ comment.created_at }} </h6>
+           </div>
+           </div>
+           {% endif %}
+           {% endfor %}
+</ul>
 </div>
-
+</div>
 
 
 </body>

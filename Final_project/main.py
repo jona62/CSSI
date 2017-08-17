@@ -30,10 +30,12 @@ class FormHandler(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section = form_section)
+        #new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section = form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section = form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        # comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.1.html')
         self.response.write(template.render(template_values))
@@ -53,10 +55,10 @@ class FormHandler2(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.2.html')
         self.response.write(template.render(template_values))
@@ -76,10 +78,10 @@ class FormHandler3(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.3.html')
         self.response.write(template.render(template_values))
@@ -99,10 +101,10 @@ class FormHandler4(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.4.html')
         self.response.write(template.render(template_values))
@@ -122,10 +124,10 @@ class FormHandler5(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.5.html')
         self.response.write(template.render(template_values))
@@ -145,10 +147,10 @@ class FormHandler6(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.6.html')
         self.response.write(template.render(template_values))
@@ -168,10 +170,10 @@ class FormHandler7(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.7.html')
         self.response.write(template.render(template_values))
@@ -191,10 +193,10 @@ class FormHandler8(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.8.html')
         self.response.write(template.render(template_values))
@@ -214,10 +216,10 @@ class FormHandler9(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.9.html')
         self.response.write(template.render(template_values))
@@ -237,10 +239,10 @@ class FormHandler10(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.10.html')
         self.response.write(template.render(template_values))
@@ -260,10 +262,10 @@ class FormHandler11(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.11.html')
         self.response.write(template.render(template_values))
@@ -283,10 +285,10 @@ class FormHandler12(webapp2.RequestHandler):
             form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
-        new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
+        new_comment = Comment(title = form_title, text_field = form_content, section= form_section)
         new_comment.put()
 
-        comments = Comment.query(ancestor = ndb.Key(Comment, 'dummy')).order(-Comment.created_at).fetch()
+        comments = Comment.query().order(-Comment.created_at).fetch()
         template_values = {'name' : 'Anonymous', 'comments' : comments}
         template = ENV.get_template('/templates/no.12.html')
         self.response.write(template.render(template_values))

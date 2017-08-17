@@ -48,10 +48,8 @@ img {
   border-radius: 15px;
   margin: -15px 41px;
 }
-#profilepic{
-  float: left;
-  border-radius: 30px;
-  margin: 40px 0 58px 10px;
+.pictures{
+  padding:10px 10px 20px 10px;
 }
 
 ol li {
@@ -79,6 +77,7 @@ p{
   font-size: 20px;
   width: 474px;
   word-wrap: break-word;
+  text-transform: capitalize;
 }
 .bhhh{
   padding: 10px 25px 0 25px;
@@ -89,12 +88,41 @@ p{
   width: auto;
   word-wrap: break-word;
 }
+h4{
+  padding: 0;
+  margin: 50px;
+  font-size: 20px;
+  font-family: monospace;
+}
 
 body{
   font-family: 'Proxima Nova Bold';
 }
 a img {
   border: none;
+}
+.section_1{
+  font-size:12px;
+  list-style-type:none;
+  margin: 0 50px 0 50px;
+}
+div.gallery {
+    margin: 20px 40px 20px 40px;
+    float: left;
+    width: 240px;
+    height: 350px;
+    border-radius: 2px;
+    padding: 10px 40px 10px 40px;
+}
+
+/*div.gallery:hover {
+    border: 2px solid #777;
+}*/
+
+div.gallery img {
+    width: 300px;
+    height:300px;
+    margin: 10px 20px 10px 20px;
 }
 .wrapper{
   background: url("/images/index1.jpg") no-repeat center center fixed;
