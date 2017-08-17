@@ -44,9 +44,9 @@ html {
 }
 
 img {
-  float: right;
-  border-radius: 30px;
-  margin: 58px 10px;
+  float: left;
+  border-radius: 15px;
+  margin: -15px 41px;
 }
 #profilepic{
   float: left;
@@ -58,11 +58,16 @@ ol li {
   display:block;
 }
 ol {
-  height: 650px;
+  height: auto;
   background-color: #e0e2e5;
   padding: 10px 20px 5px 20px;
   margin: 0 20px 0 20px;
   border-radius: 5px;
+  background: url("/images/index1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h2 {
   padding: 10px 0 5px 10px;
@@ -72,6 +77,17 @@ p{
   text-indent: 1cm;
   font-family: monospace;
   font-size: 20px;
+  width: 474px;
+  word-wrap: break-word;
+}
+.bhhh{
+  padding: 10px 25px 0 25px;
+  text-indent: 1cm;
+  margin: 2px;
+  font-family: monospace;
+  font-size: 20px;
+  width: auto;
+  word-wrap: break-word;
 }
 
 body{
@@ -81,7 +97,11 @@ a img {
   border: none;
 }
 .wrapper{
-  background-color: white;
+  background: url("/images/index1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 750px;
   border: 1px solid #c1c1c1;
   border-radius: 5px;
@@ -155,7 +175,12 @@ ul.comments-holder-ul li.comment-holder .user-img-pic{
     border: 1px solid #091919;
   }
 .comment-body{
+  padding: 0 25px 0 25px;
+  text-indent: 1cm;
+  font-family: monospace;
+  font-size: 20px;
   width: auto;
+  word-wrap: break-word;
 }
 ul.comments-holder-ul li.comment-holder h3.username-field{
   height:30px;

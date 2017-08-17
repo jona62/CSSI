@@ -25,6 +25,9 @@ class FormHandler(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section = form_section)
@@ -45,6 +48,9 @@ class FormHandler2(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -65,6 +71,9 @@ class FormHandler3(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -85,6 +94,9 @@ class FormHandler4(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -105,6 +117,9 @@ class FormHandler5(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -125,6 +140,9 @@ class FormHandler6(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -145,6 +163,9 @@ class FormHandler7(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -165,6 +186,9 @@ class FormHandler8(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -185,6 +209,9 @@ class FormHandler9(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -205,6 +232,9 @@ class FormHandler10(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -225,6 +255,9 @@ class FormHandler11(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
@@ -245,6 +278,9 @@ class FormHandler12(webapp2.RequestHandler):
     def post(self):
         form_title = self.request.get('title')
         form_content = self.request.get('text_field')
+        filters = ['bitch', 'clit', 'cock', 'cum', 'cunt', 'dick', 'fag', 'faggot', 'fuck', 'hoe', 'jizz', 'negro', 'nigga', 'nigger', 'penis', 'pussy', 'quee', 'shit', 'whore']
+        for word in filters:
+            form_content = form_content.replace(word, '*' * len(word))
         form_section = self.request.get('section')
 
         new_comment = Comment( parent = ndb.Key(Comment, 'dummy'), title = form_title, text_field = form_content, section= form_section)
